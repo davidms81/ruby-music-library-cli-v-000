@@ -55,4 +55,7 @@ class Song
     Song.new(name, artist, genre)
   end
 
+  def self.create_from_filename
+  end
+
 end
