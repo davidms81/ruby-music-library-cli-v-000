@@ -14,7 +14,9 @@ class Song
     @@all.clear
   end
 
-  def save(song)
+  def save(name)
+    song = self.new
+    @@all << song
   end
 
 end
