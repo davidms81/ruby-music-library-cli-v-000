@@ -27,7 +27,7 @@ class Song
     genre.add_song(self)
   end
 
-  def save(name)
+  def save
     @@all << self
   end
 
