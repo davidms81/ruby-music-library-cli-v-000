@@ -15,4 +15,8 @@ class Genre
     @@all.clear
   end
 
+  def songs
+    @songs
+  end
+
 end
