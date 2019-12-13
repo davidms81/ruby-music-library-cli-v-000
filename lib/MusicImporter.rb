@@ -6,7 +6,8 @@ class MusicImporter
   end
 
   def files
-    filename
+    files = @path
+
   end
 
   def import
