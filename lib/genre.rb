@@ -28,4 +28,14 @@ class Genre
     @songs.collect {|song| song.artist}.uniq
   end
 
+  def save
+    @@all << self
+  end
+
+  def self.create(name)
+    song = self.new(name)
+    @@all << song
+    song
+  end
+
 end
