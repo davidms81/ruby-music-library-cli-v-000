@@ -1,7 +1,6 @@
 class Genre
-
   extend Concerns::Findable
-
+  
   attr_accessor :name
   @@all = []
 
@@ -32,8 +31,13 @@ class Genre
     @songs
   end
 
-def artists
-  songs.collect{ |song| song.artist }.uniq
- end
+  def add_song(song)
+    song.genre = self unless song.genre
+    @songs << song unless @songs.include?(song)
+  end
+
+  def artists
+    @songs.collect {|song| song.artist}.uniq
+  end
 
 end
