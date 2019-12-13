@@ -21,6 +21,7 @@ class Artist
 
   def add_song(name)
     song = Song.new(name)
+    if song.artist.name
     song.artist = self
     @songs < song
   end
