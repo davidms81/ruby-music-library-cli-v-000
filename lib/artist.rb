@@ -15,4 +15,8 @@ class Artist
     @@all.clear
   end
 
+  def songs
+    @songs
+  end
+
 end
