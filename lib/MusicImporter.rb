@@ -1,12 +1,8 @@
 class MusicImporter
-  attr_reader :path
+  attr_accessor :path
 
   def initialize(path)
     @path = path
-  end
-
-  def path
-    @path = "./spec/fixtures/mp3s"
   end
 
   def files
