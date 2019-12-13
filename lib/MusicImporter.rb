@@ -6,6 +6,7 @@ class MusicImporter
   end
 
   def path
+    @path = "./spec/fixtures/mp3s"
   end
 
   def files
