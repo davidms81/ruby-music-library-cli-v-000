@@ -3,7 +3,6 @@ class MusicImporter
 
   def initialize(path)
     @path = path
-    filepath = "./spec/fixtures/mp3s"
   end
 
   def path
