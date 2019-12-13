@@ -50,6 +50,7 @@ class Song
     parts[0] = self.artist.name
     parts[1] = self.name
     parts[2] = self.genre.name
+    self.find_or_create_by_name(name)
   end
 
 end
