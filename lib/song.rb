@@ -14,4 +14,7 @@ class Song
     @@all.clear
   end
 
+  def save(song)
+  end
+
 end
